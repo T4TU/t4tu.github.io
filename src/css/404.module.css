@@ -1,0 +1,13 @@
+.error-main {
+    margin: 0px auto;
+    padding: 4rem;
+    text-align: center;
+    color: var(--text-lighter);
+}
+.error-main h1 {
+    color: var(--primary);
+    font-family: "Martian Mono", "Rubik", Arial, Helvetica, sans-serif;
+}
+.error-main a {
+    color: var(--primary);
+}

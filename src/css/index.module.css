@@ -1,0 +1,69 @@
+.content {
+    overflow: hidden;
+}
+.banner {
+    height: 75vh;
+}
+.welcome {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    font-family: "Martian Mono", "Rubik", Arial, Helvetica, sans-serif;
+}
+.welcome h1 {
+    color: var(--primary);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.welcome p {
+    color: var(--text-lighter);
+    font-size: 1.25rem;
+}
+.welcome p a {
+    color: var(--text-lighter);
+}
+.github-button {
+    margin-top: 4rem;
+}
+.main {
+    background-color: var(--background-light);
+}
+.grid-container {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding-bottom: 0.1rem;
+}
+.top-divider {
+    position: relative;
+    width: 120vw;
+    height: 10rem;
+    background-color: var(--background-light);
+    transform: translateX(-10vw) translateY(5rem) rotate(-3deg);
+    z-index: -1;
+}
+.bottom-divider {
+    position: relative;
+    width: 120vw;
+    height: 10rem;
+    background-color: var(--background-light);
+    transform: translateX(-10vw) translateY(-5rem) rotate(2deg);
+    z-index: -1;
+}
+.header {
+    padding: 2rem 0rem 2.5rem 0rem;
+    margin: 0px;
+    text-align: center;
+    font-family: "Martian Mono", "Rubik", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+}
+.footer {
+    text-align: center;
+    color: var(--text-lighter);
+}
+@media only screen and (max-width: 720px) {
+    .grid-container {
+      width: 100%;
+    }
+}

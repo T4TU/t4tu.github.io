@@ -1,0 +1,24 @@
+{
+  "name": "t4tu.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "t4tu.github.io",
+  "author": "Tarmo Markkanen",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "gatsby": "^5.5.0",
+    "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-dom": "^18.2.0"
+  }
+}
