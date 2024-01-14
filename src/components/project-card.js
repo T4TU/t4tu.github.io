@@ -1,20 +1,20 @@
 import * as React from "react"
-import {AnimationOnScroll} from "react-animation-on-scroll"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 import SourceButton from "../components/source-button"
 import {
-    projectCard, 
-    projectImg, 
-    projectTitle, 
-    projectTech, 
-    projectSource, 
-    projectDescription, 
-    left, 
-    right, 
-    rightTop, 
+    projectCard,
+    projectImg,
+    projectTitle,
+    projectTech,
+    projectSource,
+    projectDescription,
+    left,
+    right,
+    rightTop,
     rightBottom
 } from "../css/project-card.module.css"
 
-const ProjectCard = ({projectName, projectImgSrc, tech, source, children}) => {
+const ProjectCard = ({ projectName, projectImgSrc, tech, source, children }) => {
     return (
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={50} duration={0.25}>
             <div className={projectCard}>
@@ -28,7 +28,7 @@ const ProjectCard = ({projectName, projectImgSrc, tech, source, children}) => {
                         <p className={projectDescription}>{children}</p>
                     </div>
                     <div className={rightBottom}>
-                        <SourceButton className={projectSource} link={source.link} icon={source.icon} text={source.text}></SourceButton>
+                        {source ? <SourceButton className={projectSource} link={source.link} icon={source.icon} text={source.text}></SourceButton> : null}
                     </div>
                 </div>
             </div>
